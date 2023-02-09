@@ -1,0 +1,42 @@
+:root {
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177)
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: #fff;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: clamp(2em, 2vw, 4em);
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 > .magic {
+    display: inline;
+    position: relative;
+}
+
+h1 > .magic > .magic-star {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+}
+
+h1 > .magic > .magic-star > svg {
+    display: block;
+    opacity: .7;
+}

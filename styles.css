@@ -35,6 +35,9 @@ h1 > .magic > .magic-star {
     height: var(--size);
     position: absolute;
 
+    left: var(--star-left);
+    top: var(--star-top);
+
     animation: scale 700ms ease forwards;
 }
 
